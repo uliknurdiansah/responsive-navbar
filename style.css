@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+
+    background-image: url(img/cover1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+  height: calc(100vh);
+  background-position: center;
+
+}
+nav.navbar{
+    background-color: rgb(95, 83, 42);
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    gap:50px;
+    padding: 20px 50px;
+}
+.navbar .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    font-style: none;
+}
+
+.navbar .navbarNav{
+   display: flex; 
+   align-items: center;
+   gap: 20px;
+   padding: 10px 5px;
+}
+nav ul li a{
+    color: #fff;
+       padding:5px 10px;
+   border-radius:3px ;
+}
+
+nav ul li a.active{
+    background-color: gold;
+    color: #707070;
+     padding:5px 10px;
+   border-radius:3px ;
+}
+
+nav ul li a:hover{
+background-color: gold;
+ color: #707070;
+
+   transition: .5s;
+}
+
+@media screen  and (max-width: 768px) {
+    .toggelMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        margin-right: -10px;
+    }
+
+     .toggelMenu span{
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 30px;
+     }
+     .navbar{
+        position: relative;
+        padding: 20px;
+     }
+
+     nav ul{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+     top: -300px;
+     right: 0;
+   background-color: rgba(138, 148, 96, 0.5);
+   
+   padding: 30px 0;
+     }
+    
+.navbar .navbarNav.show{
+top:70px;
+}
+
+}
+
+
+
